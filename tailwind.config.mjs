@@ -20,6 +20,7 @@ export default {
 				'main-link': '#ECE5C7',
 				'main-great-text': '#C2DED1',
 				'main-great-link': '#144E6B',
+        'button-gray': '#6c757d',
 			},
 			fontFamily: {
 				'sans': ['Open Sans', 'sans-serif'],
