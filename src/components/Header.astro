@@ -1,0 +1,34 @@
+---
+---
+<header class="fixed top-0 left-0 right-0 z-50 bg-main-bg py-4">
+    <div class="container">
+        <nav class="mx-auto flex justify-between font-mono">
+            <a class="navbar-brand mb-0 h1" href="#">- BGM -</a>
+            <ol class="flex space-x-7 menu-list">
+                <li><a href="/#about" class="text-main-great-text hover:text-main-link">About</a></li>
+                <li><a href="/#experience" class="text-main-great-text hover:text-main-link">Experiencia</a></li>
+                <li><a href="/#projects" class="text-main-great-text hover:text-main-link">Trabajos</a></li>
+                <li><a href="/#contact" class="text-main-great-text hover:text-main-link">Contacto</a></li>
+            </ol>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .menu-list {
+        counter-reset: menu-item;
+        list-style-type: none;
+    }
+
+    .menu-list li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list li a::before {
+        counter-increment: menu-item;
+        content: "0" counter(menu-item) ".";
+        margin-right: 0.5rem; /* 8px */
+        color: #ECE5C7;
+    }
+</style>
