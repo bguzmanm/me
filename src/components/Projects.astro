@@ -1,5 +1,16 @@
 ---
 import pokeImage from '../assets/images/pokedesx.mini.png';
+import mardukImage from '../assets/images/marduk-preview.png';
+import javaIcon from '../assets/images/java-icon.svg';
+import springioIcon from '../assets/images/springio-icon.svg';
+import jqueryIcon from '../assets/images/jquery-icon.svg';
+import bootStrapIcon from '../assets/images/getbootstrap-icon.svg';
+import typeScriptIcon from '../assets/images/typescriptlang-icon.svg';
+import nodeJsIcon from '../assets/images/nodejs-icon.svg';
+import nestJsIcon from '../assets/images/nestjs-icon.svg';
+import mySqlIcon from '../assets/images/mysql-icon.svg';
+import mongoIcon from '../assets/images/mongodb-icon.svg';
+import prismaIcon from '../assets/images/prisma-orm-icon.svg';
 ---
 <span class="p-2" id="projects"></span>
 <div class="container mt-32 mb-32">
@@ -20,39 +31,101 @@ import pokeImage from '../assets/images/pokedesx.mini.png';
                     <div class="relative min-h-[400px] flex items-center justify-end">
                         <!-- Imagen del proyecto -->
                         <div class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
-                            <img class="rounded-md grayscale hover:grayscale-0 w-full max-w-lg" 
+                            <img class="rounded-md grayscale hover:grayscale-0 w-full max-w-lg"
                                  src={pokeImage.src} alt="Vista de PokeDx" id="pokeImage">
                         </div>
-                        
+
                         <!-- Contenido del proyecto -->
-                        <div class="relative z-20 w-1/2 text-right">
+                        <div class="relative z-20 w-1/2 text-right flex flex-col justify-end">
                             <p class="text-main-great-text font-mono mb-2">Proyecto Destacado</p>
                             <h3 class="font-sans text-xl font-bold mb-4">PokeDex</h3>
-                            
-                            <div id="descP01" class="bg-main-text text-main-bg p-6 rounded-md shadow-lg mb-4 relative z-30">
-                                <p>Pequeña aplicación que consume RESTful API de 
+
+                            <div id="descP01"
+                                 class="bg-main-text text-main-bg pt-6 pl-6 pr-6 pb-2 rounded-md shadow-lg mb-4 relative z-30">
+                                <p>Pequeña aplicación que consume RESTful API de
                                     <a href="https://pokeapi.co" target="_blank" class="text-main-link hover:underline">PokeAPI</a>,
-                                    y luego exponiendo algunos un par de recursos mientras cachea las respuestas.
-                                </p>
+                                    y luego exponiendo algunos un par de recursos mientras cachea las respuestas.</p>
                             </div>
-                            
                             <ul class="flex list-none font-mono text-sm mb-4 justify-end flex-wrap gap-2">
-                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">Java</li>
-                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">Spring Boot</li>
-                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">JQuery</li>
-                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">Bootstrap</li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">
+                                    <img src={javaIcon.src} alt="Java Icon"
+                                         class="w-6 h-6 rounded inline-block mr-1" id="javaIcon"/>Java
+                                </li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">
+                                    <img src={springioIcon.src} alt="Spring Icon"
+                                         class="w-6 h-6 rounded inline-block mr-1" id="SpringIcon"/>Spring
+                                </li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">
+                                    <img src={jqueryIcon.src} alt="JQuery Icon"
+                                         class="w-6 h-6 rounded inline-block mr-1" id="JQueryIcon"/>JQuery
+                                </li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">
+                                    <img src={bootStrapIcon.src} alt="Bootstrap Icon"
+                                         class="w-6 h-6 rounded inline-block mr-1" id="BootstrapIcon"/>Bootstrap
+                                </li>
                             </ul>
-                            
+
                             <div class="flex justify-end">
                                 <a href="https://github.com/bguzmanm/Pokedex" target="_blank" rel="noopener noreferrer"
                                    aria-label="GitHub" class="inline-block">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                         class="w-5 h-5 text-main-link hover:text-main-great-text transition-colors">
+                                         class="w-6 h-6">
                                         <path fill="currentColor"
                                               d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                                     </svg>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-4">
+                <div class="w-full">
+                    <div class="relative min-h-[400px] flex items-center justify-end">
+                        <!-- Imagen del proyecto -->
+                        <div class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
+                            <img class="rounded-md grayscale hover:grayscale-0 w-full max-w-lg"
+                                 src={mardukImage.src} alt="Vista de MardukApp" id="mardukImage">
+                        </div>
+
+                        <!-- Contenido del proyecto -->
+                        <div class="relative z-20 w-1/2 text-right flex flex-col justify-end">
+                            <p class="text-main-great-text font-mono mb-2">Proyecto Destacado</p>
+                            <h3 class="font-sans text-xl font-bold mb-4">Marduk</h3>
+
+                            <div id="descP01"
+                                 class="bg-main-text text-main-bg p-6 rounded-md shadow-lg mb-4 relative z-30">
+                                <p>Además de liderar al equipo técnico, he programado buena parte del backend de este
+                                    CRM con aspiraciones de ERP.</p>
+                                <p class="mt-1">Mis aportes están en un repositorio privado, por lo que no podré señalarlo acá.</p>
+                            </div>
+
+                            <ul class="flex list-none font-mono text-sm mb-4 justify-end flex-wrap gap-2">
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"><img
+                                        src={nodeJsIcon.src} alt="NodeJS Icon" class="w-6 h-6 rounded inline-block mr-1"
+                                        id="NodeJSIcon"/>
+                                    NodeJS
+                                </li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md">
+                                    <img src={typeScriptIcon.src} alt="TypeScript Icon"
+                                         class="w-6 h-6 rounded inline-block mr-1" id="TypeScriptIcon"/>TypeScript
+                                </li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"><img
+                                        src={nestJsIcon.src} alt="NestJS Icon" class="w-6 h-6 rounded inline-block mr-1"
+                                        id="NestJSIcon"/>
+                                    NestJS
+                                </li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"><img
+                                        src={prismaIcon.src} alt="PrismaORM Icon" class="w-6 h-6 rounded inline-block mr-1"
+                                        id="PrismaORMIcon"/>PrismaORM</li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"><img
+                                        src={mySqlIcon.src} alt="MySQL Icon" class="w-6 h-6 rounded inline-block mr-1"
+                                        id="mySqlIcon"/>MySQL</li>
+                                <li class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"><img
+                                        src={mongoIcon.src} alt="MongoDB Icon" class="w-6 h-6 rounded inline-block mr-1"
+                                        id="MongoDBIcon"/>MongoDB</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
