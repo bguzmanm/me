@@ -8,9 +8,9 @@ export default {
 			screens: {
 				sm: '540px',
 				md: '720px',
-				lg: '960px',
-				xl: '1140px',
-				'2xl': '1320px',
+				lg: '800px',  // Limitado a 800px
+				xl: '800px',  // Limitado a 800px
+				'2xl': '800px', // Limitado a 800px
 			},
 		},
 		extend: {
@@ -20,7 +20,7 @@ export default {
 				'main-link': '#ECE5C7',
 				'main-great-text': '#C2DED1',
 				'main-great-link': '#144E6B',
-        'button-gray': '#6c757d',
+				'button-gray': '#6c757d',
 			},
 			fontFamily: {
 				'sans': ['Open Sans', 'sans-serif'],
