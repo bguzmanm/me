@@ -25,7 +25,7 @@ Por otra parte, convocamos a ONG's, fundaciones, colectivos y organizaciones sin
 
 Esta alternativa me vuela la cabeza: imagino a tantas organizaciones que necesitan cosas para nosotros - los programadores - tan "básicas", como una página web para dar a conocer su proyecto o recaudar fondos. Pero también imagino organizaciones que requieren cosas más complejas, como una App que georeferencie vertederos ilegales, o un sistema que gestione la hoja de vida de pacientes, agenda de especialistas y un largo etcétera. Nos apasiona eso: colaborar, innovar y que nuestro trabajo tenga sentido.
 
-![img.png](img.png)
+![img.png](https://media.licdn.com/dms/image/v2/C4E12AQEdBRwSjSj93Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1629929743699?e=1761177600&v=beta&t=sU_pcIZ11jLGaGho2PFMxEKNY45vbqJ3MkWS85HSBFY)
 
 Si estás leyendo esto y eres un egresado de bootcamp, con ganas de trabajar y contribuir a una mejor sociedad, [ingresa acá](https://awakelab.typeform.com/voluntarios) y postula a nuestro Voluntariado. En unos días te convocaremos a una breve entrevista, para luego invitarte a colaborar en algún proyecto en particular.
 
