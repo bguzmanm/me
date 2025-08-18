@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography';
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -25,8 +27,33 @@ export default {
 			fontFamily: {
 				'sans': ['Open Sans', 'sans-serif'],
 				'mono': ['Share Tech Mono', 'monospace'],
-			}
+			},
+			typography: ({ theme }) => ({
+				invert: {
+					css: {
+						'--tw-prose-body': theme('colors.main-text'),
+						'--tw-prose-headings': theme('colors.main-text'),
+						h2: {
+							'fontWeight': '700',
+							'fontSize': theme('fontSize.2xl'),
+							'color': theme('colors.main-text'),
+						},
+						'--tw-prose-lead': theme('colors.main-text'),
+						'--tw-prose-links': theme('colors.main-link'),
+						'--tw-prose-bold': theme('colors.main-text'),
+						'--tw-prose-counters': theme('colors.main-great-text'),
+						'--tw-prose-bullets': theme('colors.main-great-text'),
+						'--tw-prose-hr': theme('colors.main-text / 0.2'),
+						'--tw-prose-quotes': theme('colors.main-great-text'),
+						'--tw-prose-quote-borders': theme('colors.main-link'),
+						'--tw-prose-captions': theme('colors.main-text'),
+						'--tw-prose-code': theme('colors.main-link'),
+					},
+				},
+			}),
 		},
 	},
-	plugins: [],
+	plugins: [
+		typography,
+	],
 }
