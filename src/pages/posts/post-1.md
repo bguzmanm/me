@@ -6,8 +6,8 @@ description: 'Hace algún tiempo vengo topándome con opiniones de algunos "infl
 author: 'Brian Guzmán'
 image:
     url: 'https://media.licdn.com/dms/image/v2/D4E12AQFlf_gv-g0cEQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695052875772?e=1761177600&v=beta&t=apfoI2Cpr5KdaWJmHtdx0lKP9L36XgVH8sMjomWHfpM'
-    alt: 'El logotipo completo de Astro.'
-tags: ["astro", "bloguear", "aprender en público"]
+    alt: 'Estudiantes en clases de bootcamp'
+tags: ["bootcamp", "egresados", "developer"]
 ---
 Y claro, muchas de sus críticas tienen razón. La tienen desde su ignorancia respecto de como funciona un bootcamp y que es lo que pretenden. Antes de plasmar mi opinión quiero dejar claro que me valeré de mi experiencia como desarrollador de software, facilitador tanto en bootcamps como en universidades e institutos profesionales, habitual reclutador de desarrolladores y desarrolladoras y gestor de proyectos, para formular la opinión que a continuación detallaré. Y quiero recalcar eso, es una opinión, que quizás a algunos le haga sentido, y a otros no.
 
