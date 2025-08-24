@@ -4,7 +4,7 @@ title: VIDEO - Masterclass | Piensa rápido, crea rápido
 author: Brian Guzmán
 description: "Introducción a Scrum, un marco de trabajo para gestionar proyectos, especialmente en el desarrollo de software."
 image:
-    url: /src/assets/images/scrum-logo.png
+    url: https://user-images.githubusercontent.com/68760595/164306020-120e8664-cb5b-459a-80a3-99e13b057b52.png
     alt: "Scrum"
 pubDate: 2024-11-13
 tags: ["Turing", "Pascal", "Ada Lovelace", "Enigma", "Software"]

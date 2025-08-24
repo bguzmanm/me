@@ -4,7 +4,7 @@ title: VIDEO - Introducción a Python
 author: Brian Guzmán
 description: "Desarrollé este video introductorio a python para estudiantes del bootcamp Full Stack Python."
 image:
-    url: /src/assets/images/python-logo.png
+    url: https://cdn.worldvectorlogo.com/logos/python-3.svg
     alt: "Python"
 pubDate: 2023-02-14
 tags: ["python", "intro", "web", "tecnología", "software"]

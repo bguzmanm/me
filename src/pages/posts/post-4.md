@@ -4,7 +4,7 @@ title: VIDEO - Como utilizar Github como portafolio para buscar trabajo como des
 author: Brian Guzmán
 description: "En este video muestro cómo utilizar GitHub como tu portafolio para buscar trabajo como desarrollador."
 image:
-    url: /src/assets/images/github_large.png
+    url: https://cdn.worldvectorlogo.com/logos/python-3.svg
     alt: "Github"
 pubDate: 2023-06-27
 tags: ["github", "git", "portafolio", "development", "software"]
