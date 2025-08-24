@@ -11,4 +11,4 @@ tags: ["github", "git", "portafolio", "development", "software"]
 ---
 GitHub es una plataforma que te permite compartir tu trabajo, colaborar con otros y construir proyectos juntos. Pero también puede ser una herramienta poderosa para presentar tus habilidades y proyectos a los empleadores potenciales.
 
-<iframe width="660" height="415"  src="https://www.youtube-nocookie.com/embed/tqhj3SsQDGE?si=mnW8ttC9oMD6yFvx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="660" height="415"  src="https://www.youtube-nocookie.com/embed/tqhj3SsQDGE?si=mnW8ttC9oMD6yFvx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  

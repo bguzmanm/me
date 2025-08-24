@@ -1,18 +1,56 @@
 ---
-const postsO = await Astro.glob('../pages/posts/*.md');
-const posts = postsO.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+const postsO = await Astro.glob("../pages/posts/*.md");
+const posts = postsO.sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).getTime() -
+    new Date(a.frontmatter.pubDate).getTime()
+);
 ---
+
 <span class="p-2" id="posts"></span>
 <div class="container pt-2 mt-10 md:mt-10">
-    <section class="flex flex-col-reverse items-center gap-10 md:flex-row-reverse">
-        <div class="flex-grow">
-            <div class="mt-2 font-bold text-2xl">
-                <h2 class="font-bold"><span class="font-mono text-main-great-text">05. </span>Blog</h2>
-            </div>
-            <div class="flex-grow mt-2 font-sans col-span-6 pb-2">
-                Las siguientes son algunas reflexiones, guías y otras cositas que he ido escribiendo.
-            </div>
-            <ul class="mt-4">
+  <section
+    class="flex flex-col-reverse items-center gap-10 md:flex-row-reverse"
+  >
+    <div class="flex-grow">
+      <div class="mt-2 font-bold text-2xl">
+        <h2 class="font-bold">
+          <span class="font-mono text-main-great-text">05. </span>Blog
+        </h2>
+      </div>
+      <div class="flex-grow mt-2 font-sans col-span-6 pb-2">
+        Las siguientes son algunas reflexiones, guías y otras cositas que he ido
+        escribiendo.
+      </div>
+      <ul class="mt-4">
+        {
+          posts.map((post) => (
+            <li class="mb-5">
+              <div>
+                <div class="flex items-baseline">
+                  <span class="font-mono text-sm text-gray-400 mr-3 shrink-0">
+                    {post.frontmatter.pubDate.toString().slice(0, 10)}:
+                  </span>
+                  <a
+                    href={post.url}
+                    class="font-mono text-main-great-text text-left hover:text-main-bg hover:bg-main-link rounded transition-colors duration-200 px-2 py-1"
+                  >
+                    {post.frontmatter.title}
+                  </a>
+                </div>
+                <p
+                  class="mt-1 text-gray-300"
+                  style="margin-left:calc(4ch + 4rem);"
+                >
+                  {post.frontmatter.description}
+                </p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+
+      <!-- <ul class="mt-4">
                 {posts.map(post =>
                     <li class="mb-5">
                         <div class="flex items-baseline">
@@ -22,10 +60,10 @@ const posts = postsO.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - 
                                 {post.frontmatter.title}
                             </a>
                         </div>
-                        <p class="mt-1 text-gray-300">{post.frontmatter.description}</p>
+                        <p class="mt-1 text-gray-300 ml-5">{post.frontmatter.description}</p>
                     </li>
                 )}
-            </ul>
-        </div>
-    </section>
+            </ul> -->
+    </div>
+  </section>
 </div>
