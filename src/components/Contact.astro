@@ -1,36 +1,51 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
 ---
+
 <span class="p-2" id="contact"></span>
 <div class="container pt-16 mt-32 md:mt-32">
-    <section class="flex flex-col">
-        <div class="flex-1 w-full mb-6">
-            <div class="flex-grow">
-                <div class="mt-2 font-bold text-xl md:text-2xl">
-                    <h2 class="font-bold"><span class="font-mono text-main-great-text">04. </span>Contacto</h2>
-                </div>
-            </div>
-            <div class="flex flex-col items-center text-center max-w-md md:max-w-2xl mx-auto">
-                <div class="w-full flex-none mt-4 md:mt-8 font-sans text-sm md:text-lg leading-relaxed">
-                    Aunque actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está
-                    abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible
-                    para responderte!
-                </div>
-                <div class="w-full flex-none mt-6 md:mt-12 font-sans">
-                    <a href="mailto:b.guzman.m@icloud.com"
-                       class="inline-block bg-button-gray border border-button-gray font-sans text-main-link font-normal px-6 py-3 md:px-8 md:py-4 text-sm md:text-base
-                       rounded-md hover:bg-main-link hover:text-main-bg transition-colors duration-200">Dime Hola!</a>
-                </div>
-            </div>
-            <div class="flex flex-col items-center text-center max-w-md md:max-w-2xl mx-auto mt-12">
-                <div class="w-full flex-none mt-4 md:mt-8 font-sans text-sm md:text-lg leading-relaxed">
-                    O bien contactame por mis redes sociales <span class="hidden md:inline">que ves a la izquierda</span>
-                    <div class="md:hidden flex justify-center mt-10">
-                        <SocialLinks className="flex flex-row items-center gap-6" />
-                    </div>
-
-                </div>
-            </div>
+  <section class="flex flex-col">
+    <div class="flex-1 w-full mb-6">
+      <div class="flex-grow">
+        <div class="mt-2 font-bold text-xl md:text-2xl">
+          <h2 class="font-bold">
+            <span class="font-mono text-main-great-text">04. </span>Contacto
+          </h2>
         </div>
-    </section>
+      </div>
+      <div
+        class="flex flex-col items-center text-center max-w-md md:max-w-2xl mx-auto"
+      >
+        <div
+          class="w-full flex-none mt-4 md:mt-8 font-sans text-sm md:text-lg leading-relaxed"
+        >
+          Aunque actualmente no estoy buscando nuevas oportunidades, mi bandeja
+          de entrada siempre está abierta. Ya sea que tengas una pregunta o
+          simplemente quieras saludar, ¡haré todo lo posible para responderte!
+        </div>
+        <div class="w-full flex-none mt-6 md:mt-12 font-sans">
+          <a
+            href="mailto:b.guzman.m@icloud.com"
+            class="inline-block bg-button-gray border border-button-gray font-sans text-main-link font-normal px-6 py-3 md:px-8 md:py-4 text-sm md:text-base
+                       rounded-md hover:bg-main-link hover:text-main-bg transition-colors duration-200"
+            >Dime Hola!</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center text-center max-w-md md:max-w-2xl mx-auto mt-12"
+      >
+        <div
+          class="w-full flex-none mt-4 md:mt-8 font-sans text-sm md:text-lg leading-relaxed"
+        >
+          O bien contactame por mis redes sociales <span
+            class="hidden md:inline">que ves a la izquierda</span
+          >
+          <div class="md:hidden flex justify-center mt-10">
+            <SocialLinks className="flex flex-row items-center gap-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

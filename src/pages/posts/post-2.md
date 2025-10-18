@@ -31,4 +31,4 @@ Si estás leyendo esto y eres un egresado de bootcamp, con ganas de trabajar y c
 
 Ahora, si formas parte de una ONG, no pierdas tiempo y registra tu proyecto en [este enlace](https://awakelab.typeform.com/convocatoriaong). En él tendrás que contarnos un poco de tu proyecto. Luego te contactaremos vía zoom para conversar de tu organización y en qué podemos ayudarla. ¡Muchas cosas interesantes saldrán de esa conversación!
 
-Hay muchass formas de cambiar el mundo. Una de ellas es a través del código: poner el software al servicio de las necesidades del presente. No pierdas la oportunidad de convertir a la tecnología en la mejor aliada de tu organización, dándole un soporte digital a sus más grandes ideas y sueños. 
+Hay muchass formas de cambiar el mundo. Una de ellas es a través del código: poner el software al servicio de las necesidades del presente. No pierdas la oportunidad de convertir a la tecnología en la mejor aliada de tu organización, dándole un soporte digital a sus más grandes ideas y sueños.
