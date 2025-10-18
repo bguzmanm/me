@@ -1,23 +1,35 @@
 ---
-import Layout from './Layout.astro';
+import Layout from "./Layout.astro";
 import Header from "../components/Header.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
 const { frontmatter } = Astro.props;
 ---
+
 <Layout title={frontmatter.title} description={frontmatter.description}>
-    <Header/>
-    <Sidebar/>
+    <Header />
+    <Sidebar />
     <span class="p-2" id="blog"></span>
     <div class="container pt-14 mt-4">
-        <h2 class="mt-1 font-bold text-2xl">{frontmatter.title}</h2>
-        <p class="font-mono text-main-great-text">{frontmatter.pubDate.toString().slice(0, 10)}</p>
-        <p class="flex-grow mt-2 mb-4 font-sans col-span-6"><em>{frontmatter.description}</em></p>
-        <p class="font-mono text-main-great-text text-xs">Escrito por: {frontmatter.author}</p>
-        <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} class="mt-4"/>
+        <h1 class="mt-1 font-bold text-2xl">{frontmatter.title}</h1>
+        <p class="font-mono text-main-great-text">
+            {frontmatter.pubDate.toString().slice(0, 10)}
+        </p>
+        <p class="flex-grow mt-2 mb-4 font-sans col-span-6">
+            <em>{frontmatter.description}</em>
+        </p>
+        <p class="font-mono text-main-great-text text-xs">
+            Escrito por: {frontmatter.author}
+        </p>
+        <img
+            src={frontmatter.image.url}
+            width="300"
+            alt={frontmatter.image.alt}
+            class="mt-4"
+        />
         <article class="prose prose-invert max-w-none mt-8">
-            <slot/>
+            <slot />
         </article>
     </div>
-    <Footer/>
+    <Footer />
 </Layout>
