@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import profileImage from "../assets/images/io.png";
+import profileImage2 from "../assets/images/io2.png";
 ---
 
 <div class="container pt-24">
@@ -33,11 +34,17 @@ import profileImage from "../assets/images/io.png";
         </p>
       </div>
     </div>
-    <div class="flex-shrink-0">
+    <div class="relative min-w-96 h-60">
+      <Image
+        src={profileImage2}
+        alt="Foto de perfil de Brian Guzmán"
+        class="rounded-2xl w-80 shadow-xl rotate-[-6deg] absolute left-0 top-4 z-10 transition-all duration-300 ease-in-out hover:z-30 hover:scale-110 hover:shadow-2xl hover:rotate-0"
+        loading="eager"
+      />
       <Image
         src={profileImage}
         alt="Foto de perfil de Brian Guzmán"
-        class="rounded-full w-80"
+        class="rounded-2xl w-80 shadow-xl hue-rotate-15 absolute left-12 top-8 z-20 transition-all duration-300 ease-in-out hover:z-30 hover:scale-110 hover:shadow-2xl hover:-rotate-3"
         loading="eager"
       />
     </div>
