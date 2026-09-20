@@ -1,4 +1,5 @@
 ---
+import eduScoutImage from "../assets/images/eduscout-screenshot.png";
 import pokeImage from "../assets/images/pokedesx.mini.png";
 import mardukImage from "../assets/images/marduk-preview.png";
 import javaIcon from "../assets/images/java-icon.svg";
@@ -8,365 +9,365 @@ import bootStrapIcon from "../assets/images/getbootstrap-icon.svg";
 import typeScriptIcon from "../assets/images/typescriptlang-icon.svg";
 import nodeJsIcon from "../assets/images/nodejs-icon.svg";
 import nestJsIcon from "../assets/images/nestjs-icon.svg";
+import postgresqlIcon from '../assets/images/postgresql-icon.svg'
 import mySqlIcon from "../assets/images/mysql-icon.svg";
 import mongoIcon from "../assets/images/mongodb-icon.svg";
 import prismaIcon from "../assets/images/prisma-orm-icon.svg";
-import docenteImage from "../assets/images/docente.jpg";
-import { Image } from "astro:assets";
-import GitHubIcon from "./GitHubIcon.astro";
+import dockerIcon from '../assets/images/docker-icon.svg'
+import bunIcon from "../assets/images/bun-icon.svg"
+import drizzleOrmIcon from '../assets/images/drizzle-orm-icon.svg'
+import {Image} from "astro:assets";
+import githubIcon from "../assets/images/github-icon.svg?url";
 ---
 
 <section id="projects" class="scroll-mt-20">
-<div class="container pt-16 mt-32 md:mt-32 mb-16 md:mb-32">
-  <section class="flex flex-col-reverse items-center gap-10 md:flex-row">
-    <div class="flex-grow">
-      <div class="mt-2 font-bold text-xl md:text-2xl">
-        <h2 class="font-bold">
-          <span class="font-mono text-main-great-text">03. </span>Proyectos
-        </h2>
-      </div>
-      <div class="flex-grow mt-2 font-sans text-sm md:text-base">
-        <p class="mb-2">
-          La mayor parte de mis repositorios abiertos están dentro del contexto
-          de ejemplos y guías que realizo para mis estudiantes. En cambio, los
-          que realizo de manera profesional están privados.
-        </p>
-        <p class="mb-4">
-          Sin embargo, puedo destacar algunos que me han resultado interesantes,
-          y destaco los siguientes:
-        </p>
-      </div>
+    <div class="container pt-16 mt-32 md:mt-32 mb-16 md:mb-32">
+        <section class="flex flex-col-reverse items-center gap-10 md:flex-row">
+            <div class="flex-grow">
+                <div class="mt-2 font-bold text-xl md:text-2xl">
+                    <h2 class="font-bold">
+                        <span class="font-mono text-main-great-text">03. </span>Proyectos
+                    </h2>
+                </div>
+                <div class="flex-grow mt-2 font-sans text-sm md:text-base">
+                    <p class="mb-2">
+                        La mayor parte de mis repositorios abiertos están dentro del contexto
+                        de ejemplos y guías que realizo para mis estudiantes. En cambio, los
+                        que realizo de manera profesional están privados.
+                    </p>
+                    <p class="mb-4">
+                        Sin embargo, puedo destacar algunos que me han resultado interesantes,
+                        y destaco los siguientes:
+                    </p>
+                </div>
 
-      <!-- Proyecto 1: Marduk -->
-      <div class="flex mb-4">
-        <div class="w-full">
-          <div
-            class="relative min-h-[400px] md:flex md:items-center md:justify-end"
-          >
-            <!-- Imagen del proyecto -->
-            <div
-              class="md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:z-10 mb-4 md:mb-0"
-            >
-              <Image
-                class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:rotate-6 transition-all duration-300 ease-in-out"
-                src={mardukImage}
-                alt="Vista de MardukApp"
-                id="mardukImage"
-              />
+                <!-- Proyecto 1: EduScout -->
+                <div class="flex mb-4">
+                    <div class="w-full">
+                        <div
+                                class="relative min-h-[400px] md:flex md:items-center md:justify-end"
+                        >
+                            <div
+                                    class="md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:z-10 mb-4 md:mb-0"
+                            >
+                                <Image
+                                        class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:-rotate-6 transition-all duration-300 ease-in-out"
+                                        src={eduScoutImage}
+                                        alt="Vista de EduScout"
+                                        id="eduScoutImage"
+                                />
+                            </div>
+
+                            <div
+                                    class="md:relative md:z-20 md:w-1/2 text-center md:text-right flex flex-col justify-end"
+                            >
+                                <p class="text-main-great-text font-mono mb-2">
+                                    Proyecto Destacado
+                                </p>
+                                <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
+                                    EduScout
+                                </h3>
+
+                                <div
+                                        class="bg-main-text text-main-bg p-4 md:p-6 rounded-md shadow-lg mb-4 md:relative md:z-30"
+                                >
+                                    <p class="text-sm md:text-base mb-2 md:mb-0">
+                                        Plataforma que recopila ofertas de cargos docentes de
+                                        educación superior en Chile, con scraping de 12 fuentes y
+                                        costo $0/mes en producción.
+                                    </p>
+                                    <p class="text-sm md:text-base md:mt-1">
+                                        <a
+                                                href="https://eduscout.cl"
+                                                target="_blank"
+                                                class="text-main-bg hover:underline font-bold"
+                                        >eduscout.cl</a
+                                        >
+                                    </p>
+                                </div>
+
+                                <ul
+                                        class="flex list-none font-mono text-xs md:text-sm mb-4 justify-center md:justify-end flex-wrap gap-2"
+                                >
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={nestJsIcon}
+                                                alt="NestJS Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        NestJS
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={drizzleOrmIcon}
+                                                alt="DrizzleORM Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        Drizzle ORM
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={postgresqlIcon}
+                                                alt="PostgreSQL Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        PostgreSQL
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image src={bunIcon}
+                                               alt="Bun Icon"
+                                               class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"/>
+                                        Bun
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image src={dockerIcon}
+                                               alt="Docker Icon"
+                                               class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"/>
+
+                                        Docker
+                                    </li>
+                                </ul>
+
+                                <div class="flex justify-center md:justify-end">
+                                    <a
+                                            href="https://github.com/bguzmanm/edu-scout"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="GitHub"
+                                            class="inline-block transition-opacity hover:opacity-75"
+                                            style="color: #ECE5C7"
+                                    >
+                                        <img src={githubIcon} alt="GitHub Icon" class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Marduk -->
+                <div class="flex mb-4">
+                    <div class="w-full">
+                        <div
+                                class="relative min-h-[400px] md:flex md:items-center md:justify-end"
+                        >
+                            <!-- Imagen del proyecto -->
+                            <div
+                                    class="md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:z-10 mb-4 md:mb-0"
+                            >
+                                <Image
+                                        class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:rotate-6 transition-all duration-300 ease-in-out"
+                                        src={mardukImage}
+                                        alt="Vista de MardukApp"
+                                        id="mardukImage"
+                                />
+                            </div>
+
+                            <!-- Contenido del proyecto -->
+                            <div
+                                    class="md:relative md:z-20 md:w-1/2 text-center md:text-right flex flex-col justify-end"
+                            >
+                                <p class="text-main-great-text font-mono mb-2">
+                                    Proyecto Destacado
+                                </p>
+                                <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
+                                    Marduk
+                                </h3>
+
+                                <div
+                                        class="bg-main-text text-main-bg p-4 md:p-6 rounded-md shadow-lg mb-4 md:relative md:z-30"
+                                >
+                                    <p class="text-sm md:text-base mb-2 md:mb-0">
+                                        Además de liderar al equipo técnico, he programado buena parte
+                                        del backend de este CRM con aspiraciones de ERP.
+                                    </p>
+                                    <p class="text-sm md:text-base md:mt-1">
+                                        Mis aportes están en un repositorio privado, por lo que no
+                                        podré señalarlo acá.
+                                    </p>
+                                </div>
+
+                                <ul
+                                        class="flex list-none font-mono text-xs md:text-sm mb-4 justify-center md:justify-end flex-wrap gap-2"
+                                >
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={nodeJsIcon}
+                                                alt="NodeJS Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        NodeJS
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={typeScriptIcon}
+                                                alt="TypeScript Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        TypeScript
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={nestJsIcon}
+                                                alt="NestJS Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        NestJS
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={prismaIcon}
+                                                alt="PrismaORM Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        PrismaORM
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={mySqlIcon}
+                                                alt="MySQL Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        MySQL
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={mongoIcon}
+                                                alt="MongoDB Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        MongoDB
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: PokeDex -->
+                <div class="flex mb-4">
+                    <div class="w-full">
+                        <div
+                                class="relative min-h-[400px] md:flex md:items-center md:justify-end"
+                        >
+                            <!-- Imagen del proyecto -->
+                            <div
+                                    class="md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:z-10 mb-4 md:mb-0"
+                            >
+                                <Image
+                                        class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:-rotate-6 transition-all duration-300 ease-in-out"
+                                        src={pokeImage}
+                                        alt="Vista de PokeDx"
+                                        id="pokeImage"
+                                />
+                            </div>
+
+                            <!-- Contenido del proyecto -->
+                            <div
+                                    class="md:relative md:z-20 md:w-1/2 text-center md:text-right flex flex-col justify-end"
+                            >
+                                <p class="text-main-great-text font-mono mb-2">
+                                    Proyecto Destacado
+                                </p>
+                                <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
+                                    PokeDx
+                                </h3>
+
+                                <div
+                                        class="bg-main-text text-main-bg p-4 md:pt-6 md:pl-6 md:pr-6 md:pb-2 rounded-md shadow-lg mb-4 md:relative md:z-30"
+                                >
+                                    <p class="text-sm md:text-base">
+                                        Pequeña aplicación que consume la
+                                        <a
+                                                href="https://pokeapi.co"
+                                                target="_blank"
+                                                class="text-main-great-link hover:underline">PokeAPI</a
+                                        >, y luego expone un par de recursos mientras cachea las
+                                        respuestas.
+                                    </p>
+                                </div>
+                                <ul
+                                        class="flex list-none font-mono text-xs md:text-sm mb-4 justify-center md:justify-end flex-wrap gap-2"
+                                >
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={javaIcon}
+                                                alt="Java Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        Java
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={springioIcon}
+                                                alt="Spring Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        Spring
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={jqueryIcon}
+                                                alt="JQuery Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        JQuery
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={bootStrapIcon}
+                                                alt="Bootstrap Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        Bootstrap
+                                    </li>
+                                </ul>
+
+                                <div class="flex justify-center md:justify-end">
+                                    <a href="https://github.com/bguzmanm/Pokedex"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="GitHub"
+                                            class="inline-block transition-opacity hover:opacity-75"
+                                            style="color: #ECE5C7"
+                                    >
+                                        <img src={githubIcon} alt="GitHub Icon" class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Contenido del proyecto -->
-            <div
-              class="md:relative md:z-20 md:w-1/2 text-center md:text-right flex flex-col justify-end"
-            >
-              <p class="text-main-great-text font-mono mb-2">
-                Proyecto Destacado
-              </p>
-              <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
-                Marduk
-              </h3>
-
-              <div
-                class="bg-main-text text-main-bg p-4 md:p-6 rounded-md shadow-lg mb-4 md:relative md:z-30"
-              >
-                <p class="text-sm md:text-base mb-2 md:mb-0">
-                  Además de liderar al equipo técnico, he programado buena parte
-                  del backend de este CRM con aspiraciones de ERP.
-                </p>
-                <p class="text-sm md:text-base md:mt-1">
-                  Mis aportes están en un repositorio privado, por lo que no
-                  podré señalarlo acá.
-                </p>
-              </div>
-
-              <ul
-                class="flex list-none font-mono text-xs md:text-sm mb-4 justify-center md:justify-end flex-wrap gap-2"
-              >
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={nodeJsIcon}
-                    alt="NodeJS Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  NodeJS
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={typeScriptIcon}
-                    alt="TypeScript Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />TypeScript
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={nestJsIcon}
-                    alt="NestJS Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  NestJS
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={prismaIcon}
-                    alt="PrismaORM Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />PrismaORM
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={mySqlIcon}
-                    alt="MySQL Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />MySQL
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={mongoIcon}
-                    alt="MongoDB Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />MongoDB
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Proyecto 2: PokeDex -->
-      <div class="flex mb-4">
-        <div class="w-full">
-          <div
-            class="relative min-h-[400px] md:flex md:items-center md:justify-end"
-          >
-            <!-- Imagen del proyecto -->
-            <div
-              class="md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:z-10 mb-4 md:mb-0"
-            >
-              <Image
-                class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:-rotate-6 transition-all duration-300 ease-in-out"
-                src={pokeImage}
-                alt="Vista de PokeDx"
-                id="pokeImage"
-              />
-            </div>
-
-            <!-- Contenido del proyecto -->
-            <div
-              class="md:relative md:z-20 md:w-1/2 text-center md:text-right flex flex-col justify-end"
-            >
-              <p class="text-main-great-text font-mono mb-2">
-                Proyecto Destacado
-              </p>
-              <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
-                PokeDx
-              </h3>
-
-              <div
-                class="bg-main-text text-main-bg p-4 md:pt-6 md:pl-6 md:pr-6 md:pb-2 rounded-md shadow-lg mb-4 md:relative md:z-30"
-              >
-                <p class="text-sm md:text-base">
-                  Pequeña aplicación que consume la
-                  <a
-                    href="https://pokeapi.co"
-                    target="_blank"
-                    class="text-main-great-link hover:underline">PokeAPI</a
-                  >, y luego expone un par de recursos mientras cachea las
-                  respuestas.
-                </p>
-              </div>
-              <ul
-                class="flex list-none font-mono text-xs md:text-sm mb-4 justify-center md:justify-end flex-wrap gap-2"
-              >
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={javaIcon}
-                    alt="Java Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  Java
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={springioIcon}
-                    alt="Spring Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  Spring
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={jqueryIcon}
-                    alt="JQuery Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  JQuery
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={bootStrapIcon}
-                    alt="Bootstrap Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  Bootstrap
-                </li>
-              </ul>
-
-              <div class="flex justify-center md:justify-end">
-                <a
-                  href="https://github.com/bguzmanm/Pokedex"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  class="inline-block"
-                >
-<GitHubIcon />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 3: EduScout -->
-      <div class="flex mb-4">
-        <div class="w-full">
-          <div
-            class="relative min-h-[400px] md:flex md:items-center md:justify-end"
-          >
-            <div
-              class="md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:z-10 mb-4 md:mb-0"
-            >
-              <Image
-                class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:-rotate-6 transition-all duration-300 ease-in-out"
-                src={docenteImage}
-                alt="Vista de EduScout"
-                id="eduScoutImage"
-              />
-            </div>
-
-            <div
-              class="md:relative md:z-20 md:w-1/2 text-center md:text-right flex flex-col justify-end"
-            >
-              <p class="text-main-great-text font-mono mb-2">
-                Proyecto Destacado
-              </p>
-              <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
-                EduScout
-              </h3>
-
-              <div
-                class="bg-main-text text-main-bg p-4 md:p-6 rounded-md shadow-lg mb-4 md:relative md:z-30"
-              >
-                <p class="text-sm md:text-base mb-2 md:mb-0">
-                  Plataforma que recopila ofertas de cargos docentes de
-                  educación superior en Chile, con scraping de 12 fuentes y
-                  costo $0/mes en producción.
-                </p>
-                <p class="text-sm md:text-base md:mt-1">
-                  <a
-                    href="https://eduscout.cl"
-                    target="_blank"
-                    class="text-main-link hover:underline"
-                    >eduscout.cl</a
-                  >
-                </p>
-              </div>
-
-              <ul
-                class="flex list-none font-mono text-xs md:text-sm mb-4 justify-center md:justify-end flex-wrap gap-2"
-              >
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={nodeJsIcon}
-                    alt="NodeJS Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  NodeJS
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={typeScriptIcon}
-                    alt="TypeScript Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />TypeScript
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={nestJsIcon}
-                    alt="NestJS Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />
-                  NestJS
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={prismaIcon}
-                    alt="PrismaORM Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />PrismaORM
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={mySqlIcon}
-                    alt="MySQL Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />MySQL
-                </li>
-                <li
-                  class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
-                >
-                  <Image
-                    src={mongoIcon}
-                    alt="MongoDB Icon"
-                    class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
-                  />MongoDB
-                </li>
-              </ul>
-
-              <div class="flex justify-center md:justify-end">
-                <a
-                  href="https://github.com/bguzmanm/edu-scout"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  class="inline-block"
-                >
-                  <GitHubIcon />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
     </div>
-  </section>
-</div>
