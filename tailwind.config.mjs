@@ -10,9 +10,9 @@ export default {
       screens: {
         sm: "540px",
         md: "720px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
+        lg: "800px",
+        xl: "800px",
+        "2xl": "800px",
       },
     },
     extend: {
