@@ -4,7 +4,7 @@ title: EduScout, por qué construí una plataforma de empleo docente
 author: Brian Guzmán
 description: "En este artículo te cuento qué me motivó a construir EduScout, y cómo lo hice: el scraping, la arquitectura, y cómo la mantengo en producción con costo $0 al mes."
 image:
-    url: /src/assets/images/docente.jpg
+    url: /assets/images/docente.jpg
     alt: "EduScout"
 pubDate: 2026-09-18
 tags: ["eduscout", "trabajo", "docente", "universidad", "instituto profesional"]

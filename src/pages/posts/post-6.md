@@ -7,7 +7,7 @@ image:
     url: https://user-images.githubusercontent.com/68760595/164306020-120e8664-cb5b-459a-80a3-99e13b057b52.png
     alt: "Scrum"
 pubDate: 2024-11-13
-tags: ["Turing", "Pascal", "Ada Lovelace", "Enigma", "Software"]
+tags: ["scrum", "agile", "gestión de proyectos", "desarrollo de software"]
 ---
 Scrum y Agile son palabras muy utilizadas en el mundo del desarrollo de software, pero que significan?, de donde vienen y quizás lo más importante, como lo aplicamos?
 

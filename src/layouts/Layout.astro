@@ -4,10 +4,9 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description: string;
-  keywords?: string;
 }
 
-const { title, description, keywords } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,7 +14,8 @@ const { title, description, keywords } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -39,6 +39,8 @@ const { title, description, keywords } = Astro.props;
       property="og:image"
       content={new URL("favicon.svg", Astro.url.origin).href}
     />
+    <meta property="og:image:width" content="128" />
+    <meta property="og:image:height" content="128" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
@@ -49,10 +51,9 @@ const { title, description, keywords } = Astro.props;
       name="twitter:image"
       content={new URL("favicon.svg", Astro.url.origin).href}
     />
-
-    {keywords && <meta name="keywords" content={keywords} />}
   </head>
   <body class="font-sans bg-main-bg text-main-text">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-main-link focus:text-main-bg focus:px-4 focus:py-2 focus:rounded">Saltar al contenido</a>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJZ8SQ73"
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

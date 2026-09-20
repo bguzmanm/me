@@ -7,5 +7,8 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://bguzmanm.github.io",
   base: "me",
-  integrations: [tailwind(), sitemap()],
+  integrations: [
+    tailwind(),
+    sitemap(),
+  ],
 });

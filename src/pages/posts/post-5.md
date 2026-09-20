@@ -2,12 +2,12 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: VIDEO - Historia de la Programación (Parte I)
 author: Brian Guzmán
-description: "En este video desarrollé el guión y presté mi voz, y tiene como objetivo participantes de bootcamp con niveles de alfabetización digital bajos.s"
+description: "En este video desarrollé el guión y presté mi voz, y tiene como objetivo participantes de bootcamp con niveles de alfabetización digital baja"
 image:
-    url: /src/assets/images/Ada_Lovelace.png
+    url: /assets/images/Ada_Lovelace.png
     alt: "Ada Lovelace"
 pubDate: 2021-08-16
-tags: ["Turing", "Pascal", "Ada Lovelace", "Enigma", "Software"]
+tags: ["historia", "programación", "computación"]
 ---
 Los comienzos de la computación. Un breve recorrido por la historia de algunas innovaciones que hicieron posible la computadora de nuestros días.
 

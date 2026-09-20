@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://bguzmanm.github.io/me/sitemap-index.xml
