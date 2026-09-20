@@ -4,7 +4,7 @@ title: VIDEO - Historia de la Programación (Parte I)
 author: Brian Guzmán
 description: "En este video desarrollé el guión y presté mi voz, y tiene como objetivo participantes de bootcamp con niveles de alfabetización digital baja"
 image:
-    url: /assets/images/Ada_Lovelace.png
+    url: /me/assets/images/Ada_Lovelace.png
     alt: "Ada Lovelace"
 pubDate: 2021-08-16
 tags: ["historia", "programación", "computación"]
