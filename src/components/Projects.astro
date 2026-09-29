@@ -1,11 +1,13 @@
 ---
 import eduScoutImage from "../assets/images/eduscout-screenshot.png";
-import pokeImage from "../assets/images/pokedesx.mini.png";
+import bukeeImage from "../assets/images/bukee-preview.png";
 import mardukImage from "../assets/images/marduk-preview.png";
-import javaIcon from "../assets/images/java-icon.svg";
-import springioIcon from "../assets/images/springio-icon.svg";
-import jqueryIcon from "../assets/images/jquery-icon.svg";
-import bootStrapIcon from "../assets/images/getbootstrap-icon.svg";
+import tauriIcon from "../assets/images/tauri-icon.svg";
+import nextJsIcon from "../assets/images/nextdotjs-icon.svg";
+import reactIcon from "../assets/images/react-icon.svg";
+import tailwindIcon from "../assets/images/tailwindcss-icon.svg";
+import rustIcon from "../assets/images/rust-icon.svg";
+import sqliteIcon from "../assets/images/sqlite-icon.svg";
 import typeScriptIcon from "../assets/images/typescriptlang-icon.svg";
 import nodeJsIcon from "../assets/images/nodejs-icon.svg";
 import nestJsIcon from "../assets/images/nestjs-icon.svg";
@@ -266,7 +268,7 @@ import githubIcon from "../assets/images/github-icon.svg?url";
                     </div>
                 </div>
 
-                <!-- Proyecto 3: PokeDex -->
+                <!-- Proyecto 3: Bukee -->
                 <div class="flex mb-4">
                     <div class="w-full">
                         <div
@@ -278,9 +280,9 @@ import githubIcon from "../assets/images/github-icon.svg?url";
                             >
                                 <Image
                                         class="rounded-md grayscale hover:grayscale-0 w-full md:max-w-lg hover:scale-110 hover:-rotate-6 transition-all duration-300 ease-in-out"
-                                        src={pokeImage}
-                                        alt="Vista de PokeDx"
-                                        id="pokeImage"
+                                        src={bukeeImage}
+                                        alt="Vista de Bukee"
+                                        id="bukeeImage"
                                 />
                             </div>
 
@@ -292,20 +294,22 @@ import githubIcon from "../assets/images/github-icon.svg?url";
                                     Proyecto Destacado
                                 </p>
                                 <h3 class="font-sans text-lg md:text-xl font-bold mb-4">
-                                    PokeDx
+                                    Bukee
                                 </h3>
 
                                 <div
                                         class="bg-main-text text-main-bg p-4 md:pt-6 md:pl-6 md:pr-6 md:pb-2 rounded-md shadow-lg mb-4 md:relative md:z-30"
                                 >
                                     <p class="text-sm md:text-base">
-                                        Pequeña aplicación que consume la
+                                        Aplicación de escritorio que gestiona tu biblioteca personal de
+                                        libros electrónicos, y que además se integra con un Kindle
+                                        conectado. Construida sobre
                                         <a
-                                                href="https://pokeapi.co"
+                                                href="https://tauri.app"
                                                 target="_blank"
-                                                class="text-main-great-link hover:underline">PokeAPI</a
-                                        >, y luego expone un par de recursos mientras cachea las
-                                        respuestas.
+                                                rel="noopener noreferrer"
+                                                class="text-main-great-link hover:underline">Tauri 2</a
+                                        > y Next.js.
                                     </p>
                                 </div>
                                 <ul
@@ -315,46 +319,66 @@ import githubIcon from "../assets/images/github-icon.svg?url";
                                             class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
                                     >
                                         <Image
-                                                src={javaIcon}
-                                                alt="Java Icon"
+                                                src={tauriIcon}
+                                                alt="Tauri Icon"
                                                 class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
                                         />
-                                        Java
+                                        Tauri
                                     </li>
                                     <li
                                             class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
                                     >
                                         <Image
-                                                src={springioIcon}
-                                                alt="Spring Icon"
+                                                src={nextJsIcon}
+                                                alt="NextJS Icon"
                                                 class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
                                         />
-                                        Spring
+                                        NextJS
                                     </li>
                                     <li
                                             class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
                                     >
                                         <Image
-                                                src={jqueryIcon}
-                                                alt="JQuery Icon"
+                                                src={reactIcon}
+                                                alt="React Icon"
                                                 class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
                                         />
-                                        JQuery
+                                        React
                                     </li>
                                     <li
                                             class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
                                     >
                                         <Image
-                                                src={bootStrapIcon}
-                                                alt="Bootstrap Icon"
+                                                src={tailwindIcon}
+                                                alt="TailwindCSS Icon"
                                                 class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
                                         />
-                                        Bootstrap
+                                        Tailwind
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={rustIcon}
+                                                alt="Rust Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        Rust
+                                    </li>
+                                    <li
+                                            class="bg-main-great-text text-main-bg px-2 py-1 rounded-md"
+                                    >
+                                        <Image
+                                                src={sqliteIcon}
+                                                alt="SQLite Icon"
+                                                class="w-4 h-4 md:w-6 md:h-6 rounded inline-block mr-1"
+                                        />
+                                        SQLite
                                     </li>
                                 </ul>
 
                                 <div class="flex justify-center md:justify-end">
-                                    <a href="https://github.com/bguzmanm/Pokedex"
+                                    <a href="https://github.com/bguzmanm/bukee"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label="GitHub"
@@ -371,3 +395,4 @@ import githubIcon from "../assets/images/github-icon.svg?url";
             </div>
         </section>
     </div>
+</section>
