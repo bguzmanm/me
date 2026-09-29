@@ -1,0 +1,17 @@
+# pnpm genera este archivo: formatearlo produce churn infinito y puede
+# romper el install. Nunca debe tocarlo un formateador.
+pnpm-lock.yaml
+
+# Contenido de blog: el formateo de markdown reflowea el texto authored
+# a mano y puede alterar como se renderiza. Se formatea a mano si se quiere.
+src/pages/posts/*.md
+
+# GitHub Actions: el quoting y el indent de los `run:` son sensibles,
+# reformatearlos puede romper expresiones como ${{ }}.
+.github/workflows/
+
+# Build output y dependencias (ya cubierto por .gitignore, explicito por
+# si se corre prettier fuera de un checkout de git)
+dist/
+.astro/
+node_modules/

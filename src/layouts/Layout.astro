@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css';
 
 interface Props {
   title: string;
@@ -21,11 +21,18 @@ const { title, description } = Astro.props;
     <title>{title}</title>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NJZ8SQ73');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NJZ8SQ73');
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Canonical URL -->
@@ -35,10 +42,7 @@ const { title, description } = Astro.props;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={Astro.url.href} />
-    <meta
-      property="og:image"
-      content={new URL("favicon.svg", Astro.url.origin).href}
-    />
+    <meta property="og:image" content={new URL('favicon.svg', Astro.url.origin).href} />
     <meta property="og:image:width" content="128" />
     <meta property="og:image:height" content="128" />
     <meta property="og:type" content="website" />
@@ -47,17 +51,25 @@ const { title, description } = Astro.props;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta
-      name="twitter:image"
-      content={new URL("favicon.svg", Astro.url.origin).href}
-    />
+    <meta name="twitter:image" content={new URL('favicon.svg', Astro.url.origin).href} />
   </head>
   <body class="font-sans bg-main-bg text-main-text">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-main-link focus:text-main-bg focus:px-4 focus:py-2 focus:rounded">Saltar al contenido</a>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJZ8SQ73"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-main-link focus:text-main-bg focus:px-4 focus:py-2 focus:rounded"
+    >
+      Saltar al contenido
+    </a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NJZ8SQ73"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <slot />
   </body>
 </html>

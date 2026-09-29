@@ -1,22 +1,15 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-main-bg py-4">
   <div class="container">
     <nav class="mx-auto flex justify-between items-center font-mono">
-      <a class="navbar-brand mb-0 h1" href="/me">- BGM -</a>
+      <a class="navbar-brand mb-0 h1" href="/me">
+        - BGM -
+      </a>
 
       <!-- Botón hamburguesa para móvil -->
-      <button
-        id="mobile-menu-button"
-        class="md:hidden flex flex-col space-y-1 p-2"
-      >
-        <span
-          class="block w-6 h-0.5 bg-main-great-text transition-all duration-300"
-        ></span>
-        <span
-          class="block w-6 h-0.5 bg-main-great-text transition-all duration-300"
-        ></span>
-        <span
-          class="block w-6 h-0.5 bg-main-great-text transition-all duration-300"
-        ></span>
+      <button id="mobile-menu-button" class="md:hidden flex flex-col space-y-1 p-2">
+        <span class="block w-6 h-0.5 bg-main-great-text transition-all duration-300"></span>
+        <span class="block w-6 h-0.5 bg-main-great-text transition-all duration-300"></span>
+        <span class="block w-6 h-0.5 bg-main-great-text transition-all duration-300"></span>
       </button>
 
       <!-- Menú desktop (oculto en móvil) -->
@@ -25,38 +18,43 @@
           <a
             href="/me/#about"
             class="text-main-great-text hover:text-main-link p-2 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >About</a
           >
+            About
+          </a>
         </li>
         <li>
           <a
             href="/me/#experience"
             class="text-main-great-text hover:text-main-link p-2 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Experiencia</a
           >
+            Experiencia
+          </a>
         </li>
         <li>
           <a
             href="/me/#projects"
             class="text-main-great-text hover:text-main-link p-2 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Proyectos</a
           >
+            Proyectos
+          </a>
         </li>
         <li>
           <a
             href="/me/#contact"
             class="text-main-great-text hover:text-main-link p-2 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Contacto</a
           >
+            Contacto
+          </a>
         </li>
         <li>
           <a
             href="/me/posts"
             class="text-main-great-text hover:text-main-link p-2 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Blog</a
           >
+            Blog
+          </a>
         </li>
-      </ol>
+      </ul>
     </nav>
 
     <!-- Menú móvil desplegable -->
@@ -69,38 +67,43 @@
           <a
             href="/me/#about"
             class="text-main-great-text hover:text-main-link block py-2 px-4 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >About</a
           >
+            About
+          </a>
         </li>
         <li>
           <a
             href="/me/#experience"
             class="text-main-great-text hover:text-main-link block py-2 px-4 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Experiencia</a
           >
+            Experiencia
+          </a>
         </li>
         <li>
           <a
             href="/me/#projects"
             class="text-main-great-text hover:text-main-link block py-2 px-4 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Proyectos</a
           >
+            Proyectos
+          </a>
         </li>
         <li>
           <a
             href="/me/#contact"
             class="text-main-great-text hover:text-main-link block py-2 px-4 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Contacto</a
           >
+            Contacto
+          </a>
         </li>
         <li>
           <a
             href="/me/posts"
             class="text-main-great-text hover:text-main-link block py-2 px-4 rounded-md transition-all duration-200 hover:bg-main-great-text/10 active:scale-95 active:bg-main-great-text/20"
-            >Blog</a
           >
+            Blog
+          </a>
         </li>
-      </ol>
+      </ul>
     </div>
   </div>
 </header>
@@ -118,7 +121,7 @@
 
   .menu-list li a::before {
     counter-increment: menu-item;
-    content: "0" counter(menu-item) ".";
+    content: '0' counter(menu-item) '.';
     margin-right: 0.5rem;
     color: #ece5c7;
   }
@@ -135,7 +138,7 @@
 
   .menu-list-mobile li a::before {
     counter-increment: menu-item;
-    content: "0" counter(menu-item) ".";
+    content: '0' counter(menu-item) '.';
     margin-right: 0.5rem;
     color: #ece5c7;
   }
@@ -160,33 +163,30 @@
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
+  document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
     if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener("click", function () {
-        mobileMenuButton.classList.toggle("active");
-        mobileMenu.classList.toggle("is-open");
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenuButton.classList.toggle('active');
+        mobileMenu.classList.toggle('is-open');
       });
 
       // Cerrar menú al hacer click en un enlace
-      const menuLinks = mobileMenu.querySelectorAll("a");
+      const menuLinks = mobileMenu.querySelectorAll('a');
       menuLinks.forEach((link) => {
-        link.addEventListener("click", function () {
-          mobileMenu.classList.remove("is-open");
-          mobileMenuButton.classList.remove("active");
+        link.addEventListener('click', function () {
+          mobileMenu.classList.remove('is-open');
+          mobileMenuButton.classList.remove('active');
         });
       });
 
       // Cerrar menú al hacer click fuera de él
-      document.addEventListener("click", function (event) {
-        if (
-          !mobileMenuButton.contains(event.target) &&
-          !mobileMenu.contains(event.target)
-        ) {
-          mobileMenu.classList.remove("is-open");
-          mobileMenuButton.classList.remove("active");
+      document.addEventListener('click', function (event) {
+        if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+          mobileMenu.classList.remove('is-open');
+          mobileMenuButton.classList.remove('active');
         }
       });
     }
